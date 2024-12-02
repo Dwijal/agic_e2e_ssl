@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Azure AGIC Ingress - End to End SSL
 
 ## Step-01: Introduction
@@ -253,3 +254,6 @@ exit
 # Delete Applications
 kubectl delete -f kube-manifests/
 ```
+=======
+# agic_e2e_ssl
+>>>>>>> ada2ffc54c3ff017f79fc8a106f6ebfd040cbe6a
