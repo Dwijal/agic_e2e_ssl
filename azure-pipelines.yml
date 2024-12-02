@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: 'ingressagent'
+  name: 'ingresspool'
   demands:
     - agent.name -equals 'ingressagent'
 
