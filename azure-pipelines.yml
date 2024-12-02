@@ -23,4 +23,13 @@ stages:
               targetPath: '$(System.DefaultWorkingDirectory)'
               artifact: 'allfiles'
               publishLocation: 'pipeline'
+          - task: KubernetesManifest@1
+            inputs:
+              action: 'deploy'
+              connectionType: 'azureResourceManager'
+              azureSubscriptionConnection: 'agiccon'
+              azureResourceGroup: 'agicdemo'
+              kubernetesCluster: 'agic-cluster'
+              namespace: 'default'
+              manifests: '$(System.DefaultWorkingDirectory)/kube-manifests'
           
