@@ -9,7 +9,7 @@ trigger:
 pool:
   name: 'ingresspool'
   demands:
-    - agent.name -equals 'ingressagent'
+    - agent.name -equals ingressagent
 
 steps:
 - script: echo Hello, world!
